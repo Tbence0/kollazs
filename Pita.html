@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pita</title>
+</head>
+
+<body>
+    <img src="https://cms.sulinet.hu/get/d/5bdadf1e-0ab6-49a5-a5f2-a3c01a994c01/1/8/b/Normal/c050a014.jpeg" alt="">
+    <br>
+    <input type="number" placeholder="a" id="szam1">
+    <br>
+    <input type="number" placeholder="b" id="szam2">
+    <br>
+    <button onclick="eredmeny(szam1.value, szam2.value)"> eredmény</button>
+    <span id="eredm"></span>
+
+    <script>
+
+        var c = 0
+
+        function eredmeny(a, b) {
+            c = Math.sqrt(a * a + b * b)
+            document.getElementById('eredm').innerHTML = c
+        }
+
+    </script>
+</body>
+
+</html>
